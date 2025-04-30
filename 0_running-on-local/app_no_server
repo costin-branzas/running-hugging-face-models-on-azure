@@ -1,0 +1,16 @@
+from transformers import pipeline
+# import os
+
+
+# print(os.getcwd())
+
+
+model_path = "./0_running-on-local/distilbert-base-uncased-finetuned-sst-2-english"
+classifier = pipeline("sentiment-analysisasdasd", model=model_path, tokenizer=model_path)
+
+result = classifier("I love everything about this")
+print(result)
+
+result = classifier("I hate everything about this")
+print(result)
+
