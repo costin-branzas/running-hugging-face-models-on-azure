@@ -1,0 +1,1 @@
+print("running mistral on local")
